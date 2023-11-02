@@ -1,0 +1,61 @@
+/***************************************************/
+/*      estilo de ejercicio de receta.html         */
+/*      autor: Ahmad Yasin Khairouni               */
+/*      fecha: 02-11-2023                          */
+/*      version : 1.0                              */
+/***************************************************/
+
+@font-face {
+    font-family: titulos;
+    src: url(../font/Bulletto\ Killa.ttf);
+}
+
+@font-face {
+    font-family: titulos2;
+    src: url(../font/antipasto/AntipastoPro-Bold_trial.ttf);
+}
+
+@font-face {
+    font-family: texto;
+    src: url(../font/raleway/Raleway-Bold.ttf);
+}
+
+* {box-sizing: border-box;}
+
+body {background-color: rgb(145, 0, 0);
+    color: rgb(0, 0, 0);
+    background-image: url(../image/122.jpg);}
+
+#wrapper {background-color: rgb(136, 255, 100);
+        width: 80%;
+        margin: auto;
+        padding: 10px;}
+
+#fototortilla {width: 80%;
+                margin: auto;
+                display: block;} /* a todo el ancho donde estas colocado, en este caso, de wrapper */
+
+blockquote {border-left:3px solid rgb(145, 0, 0);
+        font-style: italic;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 20px;}
+
+
+h1 {border:2px solid red;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray;
+    font-family: titulos;}
+
+h2 {font-family: titulos2;}
+
+dd {font-style: italic;}
+
+li {font-family: texto;}
+
+/***************************** gestion de la responsividad *****************************/
+
+@media only screen and (width<600px) {
+    #wrapper {width:100%}}
